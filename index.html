@@ -27,7 +27,7 @@
       border-radius: 5px;
     }
     
-    input {
+    .text {
       border-radius: 50px;
       padding: 5px;
       border: 3px outset #51DF65;
@@ -35,14 +35,14 @@
       background-color: #E5F4FF;
     }
     
-    button {
+    button, {
       background-color: #FFA06C;
       border-radius: 5px;
       border: 3px outset #FFD354;
       font-family: 'Comfortaa', cursive;
     }
     
-    div {
+    div, img {
       background-color: #A2D7FF;
       border-radius: 5px;
       padding: 10px;
@@ -63,17 +63,26 @@
   <fieldset>
     <legend>Insert Data</legend>
     
-    <input id="inpKey" type="text" placeholder="Enter Key..."/>
+    <input class="text" id="inpKey" type="text" placeholder="Enter Key..."/>
     
-      <input id="inpValue" type="text" placeholder="Enter Value..."/>
+      <input class="text" id="inpValue" type="text" placeholder="Enter Value..."/>
       
       <button type="button" id="btnInsert">Insert Data</button>
   </fieldset>
+
+    
   
   <fieldset>
     <legend>Session Storage </legend>
     <div id="IsOutput"></div>
   </fieldset>
+    <fieldset>
+    <legend>Save image to Local Storage</legend>
+    <input class="btnfile"  type="file" id="myFileInput"/>
+    
+    <img id="imgPreview" alt="Preview" />
+    
+    </fieldset>
   <script src="main.js"></script>
 </body>
 </html>
